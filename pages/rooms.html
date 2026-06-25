@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamers - Tabakvest 85</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="container-custom py-4 flex items-center justify-between">
+      <div class="text-2xl font-bold text-primary">
+        <a href="/">TABAKVEST</a>
+      </div>
+      <div class="hidden md:flex gap-8">
+        <a href="/" class="text-accent hover:text-primary font-medium">Home</a>
+        <a href="/pages/rooms.html" class="text-accent hover:text-primary font-medium text-primary">Kamers</a>
+        <a href="/pages/location.html" class="text-accent hover:text-primary font-medium">Ligging</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-accent">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-50 py-4 px-4">
+      <a href="/" class="block py-2 text-accent hover:text-primary font-medium">Home</a>
+      <a href="/pages/rooms.html" class="block py-2 text-primary font-medium">Kamers</a>
+      <a href="/pages/location.html" class="block py-2 text-accent hover:text-primary font-medium">Ligging</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-primary to-secondary py-20">
+    <div class="container-custom text-white text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Onze Kamers</h1>
+      <p class="text-xl text-white/90">9 unieke kamers voor studenten, elk met hun eigen karakter</p>
+    </div>
+  </section>
+
+  <!-- Rooms Grid -->
+  <section class="py-20 bg-gray-50">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Kamer 1 -->
+        <a href="/pages/room-1.html" class="card-room" id="kamer-1">
+          <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center relative overflow-hidden">
+            <span class="text-white text-6xl font-bold">1</span>
+            <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Verhuurd</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 1</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Gelijkvloers voorkant</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 22m² + 11m² hoogslaper</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €536/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Kamer 2 -->
+        <a href="/pages/room-2.html" class="card-room" id="kamer-2">
+          <div class="h-48 bg-gradient-to-br from-secondary to-primary flex items-center justify-center">
+            <span class="text-white text-6xl font-bold">2</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 2</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Compact kamer</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 18m²</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €480/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Kamer 3-9 Similar structure -->
+        <a href="/pages/room-3.html" class="card-room" id="kamer-3">
+          <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+            <span class="text-white text-6xl font-bold">3</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 3</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Helder met licht</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 20m²</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €500/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <a href="/pages/room-4.html" class="card-room" id="kamer-4">
+          <div class="h-48 bg-gradient-to-br from-secondary to-primary flex items-center justify-center">
+            <span class="text-white text-6xl font-bold">4</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 4</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Ruime kamers</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 25m²</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €550/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <a href="/pages/room-5.html" class="card-room" id="kamer-5">
+          <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+            <span class="text-white text-6xl font-bold">5</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 5</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Standaard</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 22m²</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €530/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <a href="/pages/room-6.html" class="card-room" id="kamer-6">
+          <div class="h-48 bg-gradient-to-br from-secondary to-primary flex items-center justify-center">
+            <span class="text-white text-6xl font-bold">6</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 6</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Gezellig</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 21m²</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €520/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <a href="/pages/room-7.html" class="card-room" id="kamer-7">
+          <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+            <span class="text-white text-6xl font-bold">7</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 7</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Hoek</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 19m²</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €490/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <a href="/pages/room-8.html" class="card-room" id="kamer-8">
+          <div class="h-48 bg-gradient-to-br from-secondary to-primary flex items-center justify-center">
+            <span class="text-white text-6xl font-bold">8</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 8</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Zijkant</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 23m²</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €540/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <a href="/pages/room-9.html" class="card-room" id="kamer-9">
+          <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+            <span class="text-white text-6xl font-bold">9</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent mb-3">Kamer 9</h3>
+            <div class="space-y-2 text-gray-600 mb-4">
+              <p class="flex items-center gap-2"><span class="text-primary">📍</span> Achterkant</p>
+              <p class="flex items-center gap-2"><span class="text-primary">📐</span> 24m²</p>
+              <p class="flex items-center gap-2"><span class="text-primary">💶</span> €545/maand</p>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-semibold">
+              Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 bg-white">
+    <div class="container-custom">
+      <h2 class="section-title text-center mb-12">Wat zit er in elke kamer?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex gap-4">
+          <span class="text-2xl">🚿</span>
+          <div>
+            <h3 class="font-bold text-accent mb-1">Privé Badkamer</h3>
+            <p class="text-gray-600 text-sm">Douche, lavabo en hangtoilet</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-2xl">📶</span>
+          <div>
+            <h3 class="font-bold text-accent mb-1">Gigabit Internet</h3>
+            <p class="text-gray-600 text-sm">Snel netwerk & WiFi</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-2xl">🛏️</span>
+          <div>
+            <h3 class="font-bold text-accent mb-1">Comfortabel Meubilair</h3>
+            <p class="text-gray-600 text-sm">Bed, bureau, kast, keukenhoek</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-2xl">🍳</span>
+          <div>
+            <h3 class="font-bold text-accent mb-1">Keuken in Kamer</h3>
+            <p class="text-gray-600 text-sm">Combi-oven & koelkast</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-2xl">📺</span>
+          <div>
+            <h3 class="font-bold text-accent mb-1">Kabeltelevisie</h3>
+            <p class="text-gray-600 text-sm">TV in alle kamers</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-2xl">🚴</span>
+          <div>
+            <h3 class="font-bold text-accent mb-1">Fietsenstalling</h3>
+            <p class="text-gray-600 text-sm">Veilige opberging</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="container-custom text-center">
+      <h2 class="text-4xl font-bold mb-4">Geïnteresseerd?</h2>
+      <p class="text-xl text-white/90 mb-8">Neem contact op voor meer informatie</p>
+      <a href="mailto:tabakvest85@gmail.com" class="btn-primary bg-white text-primary hover:bg-gray-100 inline-block">
+        Stuur E-mail
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-accent text-white py-12">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">TABAKVEST 85</h3>
+          <p class="text-white/80">Unieke studentenkamers in hartje Antwerpen</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <p class="text-white/80 mb-2"><a href="mailto:tabakvest85@gmail.com" class="hover:text-primary">tabakvest85@gmail.com</a></p>
+          <p class="text-white/80">Tel: 0495 91 65 13</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Volg ons</h4>
+          <a href="https://www.facebook.com/Tabakvest85-103313761715433/" target="_blank" class="text-white/80 hover:text-primary flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-8 text-center text-white/60">
+        <p>&copy; 2026 Tabakvest 85. Alle rechten voorbehouden.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

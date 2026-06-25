@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamer 1 - Tabakvest 85</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="container-custom py-4 flex items-center justify-between">
+      <div class="text-2xl font-bold text-primary">
+        <a href="/">TABAKVEST</a>
+      </div>
+      <div class="hidden md:flex gap-8">
+        <a href="/" class="text-accent hover:text-primary font-medium">Home</a>
+        <a href="/pages/rooms.html" class="text-accent hover:text-primary font-medium">Kamers</a>
+        <a href="/pages/location.html" class="text-accent hover:text-primary font-medium">Ligging</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-accent">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-50 py-4 px-4">
+      <a href="/" class="block py-2 text-accent hover:text-primary font-medium">Home</a>
+      <a href="/pages/rooms.html" class="block py-2 text-primary font-medium">Kamers</a>
+      <a href="/pages/location.html" class="block py-2 text-accent hover:text-primary font-medium">Ligging</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-primary to-secondary py-12">
+    <div class="container-custom text-white">
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-5xl font-bold mb-2">Kamer 1 - Verhuurd</h1>
+          <p class="text-xl text-white/90">Gelijkvloerse kamer met groter oppervlak</p>
+        </div>
+        <a href="/pages/rooms.html" class="text-white hover:text-white/80">&larr; Terug naar kamers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-16 bg-gray-50">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- Main Column -->
+        <div class="lg:col-span-2">
+          <!-- Image Gallery -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-8">
+            <div class="h-96 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+              <div class="text-center text-white">
+                <span class="text-8xl font-bold block mb-2">1</span>
+                <p>Foto gallery hier</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-accent mb-6">Omschrijving</h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-6">
+              Gelegen aan de voorzijde van onze studentenwoning op de gelijkvloerse verdieping. De grote ramen bieden zeer veel lichtinval, de hoogslaper van 11 m² is hier zeker een pluspunt.
+            </p>
+            <h3 class="text-xl font-bold text-accent mb-4">Kenmerken:</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>Gelegen op gelijkvloers aan de voorkant</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>Oppervlakte 22 m² (+ 11 m² hoogslaper)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>Badkamer met douche, lavabo en hangtoilet</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>Keukenhoek met combi-oven en koelkast</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>Keramische vloer in de ganse kamer, volledige betegeling in de badkamer</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>Hoge dubbele kleerkast voor o.a. kleerhangers</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>Hoogslaper met dubbele lattenbodem afgeschermd door matte glasplaat</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>2 hoge (draaikip)ramen met vaste bovenlichten</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary text-xl">✓</span>
+                <span>Bureau en kastje</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Specifications -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-accent mb-6">Technische Fiche</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="pb-6 border-b border-gray-200 md:border-b-0">
+                <p class="text-gray-600 font-semibold mb-1">Oppervlakte</p>
+                <p class="text-2xl font-bold text-primary">22 m²</p>
+              </div>
+              <div class="pb-6 border-b border-gray-200 md:border-b-0">
+                <p class="text-gray-600 font-semibold mb-1">Bemeubeld</p>
+                <p class="text-2xl font-bold text-primary">Deels</p>
+              </div>
+              <div class="pb-6 border-b border-gray-200 md:border-b-0">
+                <p class="text-gray-600 font-semibold mb-1">Hoogslaper</p>
+                <p class="text-2xl font-bold text-primary">11 m²</p>
+              </div>
+              <div class="pb-6 border-b border-gray-200 md:border-b-0">
+                <p class="text-gray-600 font-semibold mb-1">Roken</p>
+                <p class="text-2xl font-bold text-accent">Niet toegestaan</p>
+              </div>
+              <div class="pb-6 border-b border-gray-200 md:border-b-0">
+                <p class="text-gray-600 font-semibold mb-1">Privé Douche</p>
+                <p class="text-2xl font-bold text-primary">✓ Ja</p>
+              </div>
+              <div class="pb-6 border-b border-gray-200 md:border-b-0">
+                <p class="text-gray-600 font-semibold mb-1">Privé Toilet</p>
+                <p class="text-2xl font-bold text-primary">✓ Ja</p>
+              </div>
+              <div class="pb-6">
+                <p class="text-gray-600 font-semibold mb-1">Internet</p>
+                <p class="text-2xl font-bold text-primary">Gigabit/WiFi</p>
+              </div>
+              <div class="pb-6">
+                <p class="text-gray-600 font-semibold mb-1">Kabeltelevisie</p>
+                <p class="text-2xl font-bold text-primary">✓ Ja</p>
+              </div>
+              <div class="pb-6">
+                <p class="text-gray-600 font-semibold mb-1">Keuken</p>
+                <p class="text-2xl font-bold text-primary">In kamer</p>
+              </div>
+              <div class="pb-6">
+                <p class="text-gray-600 font-semibold mb-1">Combi-oven</p>
+                <p class="text-2xl font-bold text-primary">In kamer</p>
+              </div>
+              <div class="pb-6">
+                <p class="text-gray-600 font-semibold mb-1">Koelkast</p>
+                <p class="text-2xl font-bold text-primary">In kamer</p>
+              </div>
+              <div class="pb-6">
+                <p class="text-gray-600 font-semibold mb-1">Fietsenstalling</p>
+                <p class="text-2xl font-bold text-primary">Gelijkvloers</p>
+              </div>
+              <div class="pb-6">
+                <p class="text-gray-600 font-semibold mb-1">Videofoon</p>
+                <p class="text-2xl font-bold text-primary">✓ Ja</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div>
+          <!-- Price Box -->
+          <div class="bg-white rounded-xl shadow-lg p-8 mb-8 sticky top-24">
+            <h3 class="text-2xl font-bold text-accent mb-6">Financiële Details</h3>
+            <div class="space-y-4 mb-8">
+              <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                <span class="text-gray-700">Maandelijkse huur</span>
+                <span class="text-2xl font-bold text-primary">€536</span>
+              </div>
+              <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                <span class="text-gray-700">Kosten (gas, water, internet)</span>
+                <span class="text-2xl font-bold text-primary">€150</span>
+              </div>
+              <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                <span class="text-gray-700">Huurwaarborg</span>
+                <span class="text-lg font-bold text-primary">2 mnd huur</span>
+              </div>
+              <div>
+                <span class="text-gray-700">Huurperiode</span>
+                <p class="text-lg font-bold text-primary">15/09 - 14/09 (volgende jaar)</p>
+              </div>
+            </div>
+
+            <div class="bg-primary/10 p-4 rounded-lg mb-6">
+              <p class="text-sm text-gray-700 mb-2">
+                <strong>Mattresses:</strong> 2x 80cm × 200cm lattenbodem
+              </p>
+            </div>
+
+            <button onclick="alert('Stuur een email naar tabakvest85@gmail.com')" class="btn-primary w-full mb-4">
+              Interesse Tonen
+            </button>
+            <a href="mailto:tabakvest85@gmail.com" class="btn-secondary w-full text-center">
+              Stuur E-mail
+            </a>
+          </div>
+
+          <!-- Quality Badge -->
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="text-5xl mb-4">✓</div>
+            <h4 class="text-lg font-bold text-accent mb-2">Vlaams Kwaliteitslabel</h4>
+            <p class="text-gray-600 text-sm">Alle kamers beschikken over het officiële Vlaams kwaliteitslabel voor studentenkamers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Similar Rooms -->
+  <section class="py-16 bg-white">
+    <div class="container-custom">
+      <h2 class="text-3xl font-bold text-accent mb-8">Andere Kamers</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="/pages/room-2.html" class="card-room">
+          <div class="h-40 bg-gradient-to-br from-secondary to-primary flex items-center justify-center">
+            <span class="text-white text-4xl font-bold">2</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-accent mb-2">Kamer 2</h3>
+            <p class="text-gray-600">18m² - €480/maand</p>
+          </div>
+        </a>
+        <a href="/pages/room-3.html" class="card-room">
+          <div class="h-40 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+            <span class="text-white text-4xl font-bold">3</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-accent mb-2">Kamer 3</h3>
+            <p class="text-gray-600">20m² - €500/maand</p>
+          </div>
+        </a>
+        <a href="/pages/room-4.html" class="card-room">
+          <div class="h-40 bg-gradient-to-br from-secondary to-primary flex items-center justify-center">
+            <span class="text-white text-4xl font-bold">4</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-accent mb-2">Kamer 4</h3>
+            <p class="text-gray-600">25m² - €550/maand</p>
+          </div>
+        </a>
+      </div>
+      <div class="text-center mt-8">
+        <a href="/pages/rooms.html" class="btn-primary">Alle Kamers Bekijken</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="container-custom text-center">
+      <h2 class="text-4xl font-bold mb-4">Geïnteresseerd in Kamer 1?</h2>
+      <p class="text-xl text-white/90 mb-8">Neem contact op voor meer informatie</p>
+      <a href="mailto:tabakvest85@gmail.com" class="btn-primary bg-white text-primary hover:bg-gray-100 inline-block">
+        Contact
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-accent text-white py-12">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">TABAKVEST 85</h3>
+          <p class="text-white/80">Unieke studentenkamers in hartje Antwerpen</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <p class="text-white/80 mb-2"><a href="mailto:tabakvest85@gmail.com" class="hover:text-primary">tabakvest85@gmail.com</a></p>
+          <p class="text-white/80">Tel: 0495 91 65 13</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Volg ons</h4>
+          <a href="https://www.facebook.com/Tabakvest85-103313761715433/" target="_blank" class="text-white/80 hover:text-primary flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-8 text-center text-white/60">
+        <p>&copy; 2026 Tabakvest 85. Alle rechten voorbehouden.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
