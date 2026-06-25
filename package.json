@@ -9,7 +9,11 @@
     "css:build": "tailwindcss -i src/styles.css -o dist/styles.css --minify",
     "css:watch": "tailwindcss -i src/styles.css -o dist/styles.css --watch"
   },
-  "keywords": ["student housing", "antwerp", "tabakvest"],
+  "keywords": [
+    "student housing",
+    "antwerp",
+    "tabakvest"
+  ],
   "author": "Tabakvest 85",
   "license": "ISC",
   "devDependencies": {
