@@ -1,0 +1,261 @@
+/* ============================================================
+   Tabakvest 85 — Proposal 1: Minimalist Luxury
+   Quiet elegance · generous whitespace · refined serif type
+   ============================================================ */
+
+:root {
+  --bg: #faf8f4;
+  --bg-alt: #f1ece3;
+  --ink: #1b1813;
+  --muted: #6f675b;
+  --line: #e4ddd0;
+  --gold: #9a7b4f;
+  --gold-deep: #7c6038;
+  --white: #ffffff;
+  --font-serif: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  --font-sans: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--ink);
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ---- typographic primitives ---- */
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+h1, h2, h3 { font-family: var(--font-serif); font-weight: 500; line-height: 1.08; letter-spacing: -0.01em; }
+
+.rule {
+  width: 56px;
+  height: 1px;
+  background: var(--gold);
+  border: 0;
+  margin: 2rem 0;
+}
+.rule.center { margin-left: auto; margin-right: auto; }
+
+/* ============================ NAV ============================ */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 248, 244, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+}
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.logo span { color: var(--gold); }
+nav ul { display: flex; list-style: none; gap: 2.6rem; align-items: center; }
+nav ul a {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 4px;
+}
+nav ul a::after {
+  content: '';
+  position: absolute; left: 0; bottom: 0;
+  width: 0; height: 1px; background: var(--gold);
+  transition: width 0.4s var(--ease);
+}
+nav ul a:hover::after, nav ul a.active::after { width: 100%; }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 6px;
+}
+.hamburger span { width: 26px; height: 1.5px; background: var(--ink); transition: var(--ease) 0.3s; }
+.hamburger.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ============================ HERO ============================ */
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 6rem 2rem 5rem;
+}
+.hero-text h1 {
+  font-size: clamp(3.2rem, 7vw, 6rem);
+  margin-bottom: 1.5rem;
+}
+.hero-text .sub {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 30ch;
+  margin-bottom: 2.6rem;
+}
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-figure {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+.hero-figure img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.92); }
+.hero-figure::after {
+  content: '';
+  position: absolute; inset: 0;
+  border: 1px solid rgba(255,255,255,0.4);
+  margin: 14px;
+  pointer-events: none;
+}
+
+/* ---- buttons ---- */
+.btn {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.1rem 2.2rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s var(--ease);
+}
+.btn-primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn-primary:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+.btn-secondary:hover { background: var(--ink); color: var(--bg); }
+
+/* ============================ ABOUT ============================ */
+.about { padding: 6.5rem 0; border-top: 1px solid var(--line); }
+.about .container { max-width: 760px; text-align: center; }
+.about h2 { font-size: clamp(2.1rem, 4.5vw, 3.4rem); margin-bottom: 0; }
+.about .body { text-align: left; margin-top: 3rem; }
+.about .body p { color: var(--muted); margin-bottom: 1.6rem; }
+.about .body p strong { color: var(--ink); font-weight: 400; }
+.statement {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  line-height: 1.4;
+  color: var(--ink);
+  text-align: center;
+  margin-top: 1rem;
+}
+.label-badge {
+  margin-top: 3.5rem;
+  display: flex; flex-direction: column; align-items: center; gap: 0.9rem;
+}
+.label-badge img { height: 76px; opacity: 0.9; }
+.label-badge span { font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); }
+
+/* ============================ SHOWCASE ============================ */
+.showcase { background: var(--bg-alt); padding: 6.5rem 0; }
+.showcase .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.showcase-media { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.showcase-media img { aspect-ratio: 3/4; object-fit: cover; width: 100%; height: 100%; }
+.showcase-media img:first-child { margin-top: 2.4rem; }
+.showcase-text h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.4rem; }
+.showcase-text p { color: var(--muted); margin-bottom: 2.2rem; max-width: 38ch; }
+
+/* ============================ CONTACT ============================ */
+.contact { padding: 7rem 0; text-align: center; }
+.contact h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.contact-list { list-style: none; margin-top: 2.5rem; display: inline-flex; flex-direction: column; gap: 1.4rem; }
+.contact-list a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: color 0.3s var(--ease);
+}
+.contact-list a:hover { color: var(--gold-deep); }
+.contact-list i { color: var(--gold); font-size: 0.95rem; }
+
+/* ============================ FOOTER ============================ */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+footer p + p { margin-top: 0.4rem; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; }
+
+/* ============================ REVEAL ============================ */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ============================ RESPONSIVE ============================ */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 3rem; padding-top: 4rem; }
+  .hero-figure { aspect-ratio: 16/11; }
+  .showcase .grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .showcase-media img:first-child { margin-top: 0; }
+}
+@media (max-width: 720px) {
+  .hamburger { display: flex; }
+  nav ul {
+    position: absolute; top: 84px; left: 0; right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    gap: 0; padding: 0;
+    border-bottom: 1px solid var(--line);
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.45s var(--ease);
+  }
+  nav ul.active { max-height: 340px; }
+  nav ul li { width: 100%; text-align: center; }
+  nav ul li a { display: block; padding: 1.1rem 0; border-top: 1px solid var(--line); }
+  .hero-actions .btn { flex: 1; text-align: center; }
+}
