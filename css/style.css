@@ -43,6 +43,29 @@ body {
   padding: 0 var(--spacing-lg);
 }
 
+/* ==================== FONT AWESOME ICONS ==================== */
+
+.fa {
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.feature-icon i,
+.highlight-icon i {
+  color: var(--accent);
+  font-size: inherit;
+}
+
+.feature-item:hover .fa {
+  color: var(--accent-light);
+  transform: scale(1.1);
+}
+
+.highlight-card:hover i {
+  color: var(--accent-light);
+  transform: scale(1.15);
+}
+
 /* ==================== NAVIGATION ==================== */
 
 nav {
