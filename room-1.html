@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room 1 - Tabakvest 85</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Tabakvest 85</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html" class="active">Rooms</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ROOM HEADER -->
+    <section class="room-header">
+        <div class="container">
+            <a href="rooms.html" class="back-button">← Back to All Rooms</a>
+            <h1>Room 1</h1>
+            <span class="room-status status-available">Available</span>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section>
+        <div class="container">
+            <!-- GALLERY -->
+            <div class="gallery">
+                <img src="pictures/kamer 1/1.jpg" alt="Room 1" class="main-image" id="mainImage">
+                <div class="thumbnail-gallery">
+                    <img src="pictures/kamer 1/1.jpg" alt="Photo 1" class="thumbnail active" onclick="changeImage(this)">
+                    <img src="pictures/kamer 1/2.jpg" alt="Photo 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="pictures/kamer 1/3.jpg" alt="Photo 3" class="thumbnail" onclick="changeImage(this)">
+                    <img src="pictures/kamer 1/4.jpg" alt="Photo 4" class="thumbnail" onclick="changeImage(this)">
+                    <img src="pictures/kamer 1/5.jpg" alt="Photo 5" class="thumbnail" onclick="changeImage(this)">
+                    <img src="pictures/kamer 1/6.jpg" alt="Photo 6" class="thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <!-- ROOM INFO GRID -->
+            <div class="room-info-grid">
+                <div class="info-box">
+                    <div class="info-box-label">Size</div>
+                    <div class="info-box-value">[SIZE m²]</div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-label">Monthly Rent</div>
+                    <div class="info-box-value">€[PRICE]</div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-label">Type</div>
+                    <div class="info-box-value">[ROOM TYPE]</div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box-label">Status</div>
+                    <div class="info-box-value">Available</div>
+                </div>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div style="max-width: 800px; margin: 3rem auto;">
+                <h2>Room Description</h2>
+                <p style="font-size: 1rem; line-height: 1.8; color: #555; margin: 1rem 0;">
+                    [INSERT DETAILED ROOM DESCRIPTION FROM www.tabakvest85.be]
+                </p>
+            </div>
+
+            <!-- FEATURES -->
+            <div style="max-width: 900px; margin: 3rem auto;">
+                <h2>Room Features</h2>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">🛏️</div>
+                        <div class="feature-text">
+                            <h4>Furnished Bed</h4>
+                            <p>[Feature details]</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚿</div>
+                        <div class="feature-text">
+                            <h4>Private Bathroom</h4>
+                            <p>[Feature details]</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🪟</div>
+                        <div class="feature-text">
+                            <h4>Large Windows</h4>
+                            <p>[Feature details]</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💻</div>
+                        <div class="feature-text">
+                            <h4>High-Speed Internet</h4>
+                            <p>[Feature details]</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">❄️</div>
+                        <div class="feature-text">
+                            <h4>Climate Control</h4>
+                            <p>[Feature details]</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🧹</div>
+                        <div class="feature-text">
+                            <h4>Regular Cleaning</h4>
+                            <p>[Feature details]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOCATION INFO -->
+            <div style="max-width: 800px; margin: 3rem auto;">
+                <h2>Location & Accessibility</h2>
+                <p style="font-size: 1rem; line-height: 1.8; color: #555;">
+                    [INSERT LOCATION AND ACCESSIBILITY INFORMATION]
+                </p>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; margin: 4rem 0;">
+                <h3 style="margin-bottom: 1rem;">Interested in this room?</h3>
+                <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="rooms.html" class="btn btn-outline">View Other Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Tabakvest 85. All rights reserved.</p>
+        <p>Professional Student Housing in Antwerp</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function changeImage(thumbnail) {
+            // Update main image
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = thumbnail.src;
+            
+            // Update active thumbnail
+            document.querySelectorAll('.thumbnail').forEach(img => {
+                img.classList.remove('active');
+            });
+            thumbnail.classList.add('active');
+        }
+    </script>
+</body>
+</html>
