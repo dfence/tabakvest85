@@ -1,172 +1,137 @@
-# Tabakvest 85 - Modern Student Housing Website
+# Tabakvest 85 - Student Housing Website
 
-A beautiful, modern website for student housing in Antwerp, built with HTML, CSS (Tailwind), and pure JavaScript.
+Professional student housing website built with **GitHub Pages** for Tabakvest 85 in Antwerp, Belgium.
 
-## 🎯 Features
-
-- **Responsive Design** - Works perfectly on mobile, tablet, and desktop
-- **Modern Aesthetics** - Clean, professional design with smooth transitions
-- **9 Room Listings** - Detailed pages for each student room with pricing and features
-- **Location Page** - Interactive map and location information
-- **Performance Optimized** - Fast loading, SEO-friendly
-- **Fully Static** - No backend required, perfect for Cloudflare Pages
-
-## 📁 Project Structure
+## 📂 Folder Structure
 
 ```
-tabakvest-85/
-├── index.html              # Homepage
-├── pages/
-│   ├── rooms.html         # Room listing page
-│   ├── location.html      # Location & map page
-│   ├── room-1.html        # Individual room pages
-│   ├── room-2.html
-│   └── ...room-9.html
-├── src/
-│   ├── styles.css         # Tailwind CSS + custom styles
-│   └── script.js          # JavaScript utilities
-├── public/                # Static assets
-├── tailwind.config.js     # Tailwind configuration
-├── postcss.config.js      # PostCSS configuration
-└── package.json           # Dependencies & scripts
+tabakvest85/
+├── index.html              ← Home page
+├── rooms.html              ← Rooms overview (grid layout)
+├── room-1.html             ← Room 1 details (template for rooms 2-9)
+├── css/
+│   └── style.css           ← Professional corporate design
+├── js/
+│   └── script.js           ← Interactivity & navigation
+├── pictures/               ← All images
+│   ├── gevel.jpg           ← Building photo
+│   ├── student.jpg         ← Student header photo
+│   └── kamer 1/            ← Room 1 photos (1.jpg - 6.jpg)
+│       ├── 1.jpg through 6.jpg
+├── .git/                   ← GitHub repository (hidden)
+├── .gitignore              ← Git configuration
+└── README.md               ← This file
 ```
 
-## 🚀 Getting Started Locally
+## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 16+ and npm
+### **Local Development**
+1. Open `index.html` in your browser to preview
+2. Edit HTML files with any text editor
+3. CSS is in `css/style.css` - modify colors, fonts, spacing here
+4. JavaScript is in `js/script.js` - add interactivity here
 
-### Installation
+### **Publishing to GitHub Pages**
+1. Make changes locally in your folder
+2. Commit and push to GitHub:
+   ```bash
+   git add .
+   git commit -m "Your message here"
+   git push
+   ```
+3. Site automatically deploys to: `https://dfence.github.io/tabakvest85/`
 
-```bash
-# Install dependencies
-npm install
+## 📝 Next Steps
 
-# Start development server with CSS watching
-npm run dev
+### **1. Add Content (Fill in placeholders)**
+Replace all `[PLACEHOLDER TEXT]` in HTML files with actual content from www.tabakvest85.be:
+- Home page headline and description
+- Room features and amenities
+- Contact information
 
-# Build for production
-npm run build
+### **2. Add More Room Photos**
+Create subdirectories for each room:
+```
+pictures/
+├── kamer 2/  (add 1.jpg, 2.jpg, 3.jpg, ...)
+├── kamer 3/
+├── kamer 4/
+... etc
+└── kamer 9/
 ```
 
-### Local Development
+### **3. Create Room Pages (2-9)**
+Copy `room-1.html` to `room-2.html` through `room-9.html` and update:
+- Room number and status
+- Image paths (change `pictures/kamer 1/` to `pictures/kamer 2/`, etc.)
+- Description and features
 
-1. Open `index.html` in your browser or use a local server:
-```bash
-npx http-server
+### **4. Update Links in rooms.html**
+Change placeholder room cards from disabled "Coming Soon" to working links pointing to the new room pages.
+
+## 💻 Local vs GitHub Best Practice
+
+### **Local Folder** (Your Computer)
+- ✅ Working space where you make edits
+- ✅ Test changes before publishing
+- ✅ Keep a backup of all files
+- ✅ Never edit directly on GitHub website
+
+### **GitHub Repository** (Cloud Backup & Publishing)
+- ✅ Backup of all your files
+- ✅ Automatic publishing to GitHub Pages
+- ✅ Version history (can revert changes)
+- ✅ Only push when you're ready to publish
+
+### **Workflow**
 ```
-
-2. CSS will automatically compile when you save files (during `npm run dev`)
-
-## 🌐 Deployment to Cloudflare Pages
-
-### Step 1: Prepare Your Repository
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
+Edit locally → Test in browser → git add/commit/push → GitHub Pages updates
 ```
-
-### Step 2: Push to GitHub
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/tabakvest-85.git
-git branch -M main
-git push -u origin main
-```
-
-### Step 3: Deploy on Cloudflare Pages
-
-1. Go to [Cloudflare Pages](https://pages.cloudflare.com/)
-2. Click "Create a project" → "Connect to Git"
-3. Select your repository
-4. Configure build settings:
-   - **Build command:** `npm run build && npm run copy`
-   - **Build output directory:** `dist`
-   - **Framework preset:** None
-
-### Step 4: Connect Custom Domain
-
-In Cloudflare Pages project settings:
-1. Go to "Custom domains"
-2. Add your domain
-3. Update DNS records in your registrar to point to Cloudflare
-
-## 📝 Content Management
-
-### Update Room Information
-
-Edit individual room pages in `pages/room-X.html`:
-- Room description
-- Technical specifications
-- Pricing information
-- Features and amenities
-
-### Update Contact Information
-
-Replace these email addresses and phone numbers throughout:
-- Email: `tabakvest85@gmail.com`
-- Phone: `0495 91 65 13`
-- Facebook: Update social links in footer
 
 ## 🎨 Customization
 
-### Colors
-
-Edit `tailwind.config.js` to change the color scheme:
-```javascript
-colors: {
-  primary: '#8B6F47',      // Main brown
-  secondary: '#D4A574',    // Light tan
-  accent: '#2C3E50',       // Dark blue
+### **Colors**
+Edit the CSS variables at the top of `css/style.css`:
+```css
+:root {
+  --primary: #1e3a5f;        /* Deep blue */
+  --secondary: #2d5a8c;      /* Medium blue */
+  --accent: #f39c12;         /* Gold */
+  /* ... more colors ... */
 }
 ```
 
-### Typography
-
-Fonts are loaded from Google Fonts (Inter). Change in HTML `<head>` sections.
-
-### Images
-
-Add room photos by replacing gradient backgrounds:
-```html
-<div style="background: url('path/to/image.jpg')"></div>
+### **Fonts**
+Change fonts in the `body` selector:
+```css
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 ```
 
-## 🔍 SEO Optimization
+### **Images**
+- Replace `pictures/gevel.jpg` with your building photo
+- Replace `pictures/student.jpg` with your student photo
+- Add room photos to subdirectories
 
-- Meta descriptions on all pages ✓
-- Semantic HTML structure ✓
-- Mobile-friendly responsive design ✓
-- Fast page load times ✓
-- Structured content ✓
+## 📱 Responsive Design
+The site automatically adapts to:
+- ✅ Desktop (1200px+)
+- ✅ Tablet (768px - 1200px)
+- ✅ Mobile (under 768px)
 
-## ⚡ Performance
+No additional work needed - CSS handles all screen sizes.
 
-- **Static HTML/CSS/JS** - No backend processing
-- **Minified CSS** - Optimized file sizes
-- **Lazy loading ready** - For future image optimization
-- **Zero JavaScript dependencies** - Fast & secure
-
-## 📱 Browser Support
-
-- Chrome/Edge 90+
-- Firefox 88+
-- Safari 14+
-- Mobile browsers (iOS Safari 14+, Chrome Android)
-
-## 📄 License
-
-All rights reserved. Tabakvest 85, 2026.
+## 🔗 Custom Domain (Later)
+When ready to use your Vimexx domain instead of github.io:
+1. Add a CNAME file to this folder with your domain
+2. Configure DNS settings at Vimexx
+3. Update GitHub Pages settings
 
 ## 📞 Support
-
-For inquiries about student housing:
-- Email: tabakvest85@gmail.com
-- Phone: +32 (0)495 91 65 13
-- Facebook: [Tabakvest85](https://www.facebook.com/Tabakvest85-103313761715433/)
+Questions? Edit `index.html` to see how HTML works, or ask for help!
 
 ---
 
-Built with ❤️ using Tailwind CSS
+**Current Status:** ✅ Ready for content and photos  
+**Last Updated:** June 2026
