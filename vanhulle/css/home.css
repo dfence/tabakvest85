@@ -338,7 +338,7 @@ nav ul a.active::after { width: 100%; }
   background: var(--white);
   padding: 2rem;
   border-radius: 8px;
-  text-align: center;
+  text-align: left;
   border: 1px solid var(--line);
   transition: all 0.3s var(--ease);
 }
@@ -348,19 +348,32 @@ nav ul a.active::after { width: 100%; }
   box-shadow: 0 8px 24px rgba(154, 123, 79, 0.08);
 }
 
-.service-icon {
-  font-size: 2.4rem;
-  color: var(--gold);
-  margin-bottom: 1rem;
-}
-
 .service-card h3 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
+  color: var(--ink);
 }
 
-.service-card p {
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  padding: 0.6rem 0;
+  padding-left: 1.6rem;
+  position: relative;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.service-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
 }
 
 /* ============================ PARTNERS ============================ */
