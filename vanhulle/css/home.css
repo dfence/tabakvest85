@@ -239,16 +239,18 @@ nav ul a.active::after { width: 100%; }
   color: var(--white);
 }
 
-.hero-placeholder {
+.hero-figure {
   width: 100%;
-  aspect-ratio: 1;
-  background: var(--bg-alt);
+  overflow: hidden;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  color: var(--gold);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.hero-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* ============================ ABOUT ============================ */
@@ -326,6 +328,61 @@ nav ul a.active::after { width: 100%; }
   margin: 0 auto 3rem;
   font-size: 1.05rem;
   color: var(--muted);
+}
+
+/* Services showcase with image */
+.services-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--bg-alt) 0%, var(--white) 100%);
+  border-radius: 8px;
+}
+
+.showcase-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.showcase-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.showcase-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: var(--white);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.showcase-caption p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.showcase-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcase-text p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  font-size: 1rem;
 }
 
 .services-grid {
@@ -665,6 +722,12 @@ footer {
 
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .services-showcase {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
   }
 
   .header-info .container {
