@@ -1,127 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabakvest 85 - Studentenkamers in Antwerpen</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Tabakvest 85 - Website Layout Poll</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .proposals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .proposal-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .proposal-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+        .proposal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .proposal-header h2 {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .proposal-number {
+            font-size: 0.9em;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .proposal-body {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .proposal-description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            flex: 1;
+        }
+
+        .proposal-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .proposal-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .proposal-link:active {
+            transform: scale(0.98);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .proposals-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="container">
-            <a href="index.html" class="logo">Tabakvest 85</a>
-            <button class="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="rooms.html">Kamers</a></li>
-                <li><a href="locatie.html">Locatie</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Een Poll om Onze Nieuwe Website Layout te Kiezen</h1>
+            <p>Bekijk elk voorstel en stem op je favoriete design!</p>
         </div>
-    </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Tabakvest 85</h1>
-            <p>Unieke studentenkamers in hartje Antwerpen</p>
-            <p style="font-size: 1.1rem; font-weight: 300; margin-bottom: var(--spacing-2xl);">De ideale plek om te genieten van het Antwerpse studentenleven</p>
-            <div class="cta-buttons">
-                <a href="rooms.html" class="btn btn-primary">Bekijk onze kamers</a>
-                <a href="#contact" class="btn btn-secondary">Neem contact op</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section>
-        <div class="container">
-            <h2>Waarom kiezen voor Tabakvest 85?</h2>
-            <div style="max-width: 800px; margin: 2rem auto; text-align: center;">
-                <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-                    Deze studentenwoning is niet enkel mooi, fris en trendy, ze is ook ideaal gelegen in een zeer rustige straat vlakbij de hogescholen tussen de bruisende Leopoldplaats en de Oudevaartplaats. Het station Antwerpen-Centraal is op wandelafstand.
-                </p>
-            </div>
-
-            <div class="features-list">
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-home"></i></div>
-                    <div class="feature-text">
-                        <h4>Ruime Kamers</h4>
-                        <p>Kamers in verschillende afmetingen, elk met eigen privé-badkamer</p>
-                    </div>
+        <div class="proposals-grid">
+            <!-- Proposal 1: Minimalist -->
+            <div class="proposal-card">
+                <div class="proposal-header">
+                    <h2>Minimalist</h2>
+                    <span class="proposal-number">Voorstel 1</span>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-window-maximize"></i></div>
-                    <div class="feature-text">
-                        <h4>Grote Ramen & Licht</h4>
-                        <p>Veel natuurlijk licht en luchtdoorstroming in iedere kamer</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-wifi"></i></div>
-                    <div class="feature-text">
-                        <h4>Snel Internet</h4>
-                        <p>Snelle internetverbinding in alle kamers voor studeren</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
-                    <div class="feature-text">
-                        <h4>Combi Oven & Koelkast</h4>
-                        <p>Combi oven en koelkast in elke kamer voor eigen bereiding</p>
-                    </div>
+                <div class="proposal-body">
+                    <p class="proposal-description">Clean, timeless & elegant typography. Een schone aesthetic met focus op content.</p>
+                    <a href="proposal_1_minimalist/index.html" class="proposal-link">Bekijk Design →</a>
                 </div>
             </div>
 
-            <div style="max-width: 800px; margin: 3rem auto; text-align: center; padding: 2rem; background-color: #f5f5f5; border-radius: 2px;">
-                <img src="pictures/Vlaams-kotlabel_logo.png" alt="Vlaams Kwaliteitslabel" style="height: 80px; margin-bottom: 1rem; display: inline-block;">
-                <p style="font-size: 0.95rem; color: #333; line-height: 1.8;">
-                    <strong>✓ Alle kamers beschikken over het Vlaams kwaliteitslabel voor studentenkamers</strong>
-                </p>
+            <!-- Proposal 2: Editorial -->
+            <div class="proposal-card">
+                <div class="proposal-header">
+                    <h2>Editorial</h2>
+                    <span class="proposal-number">Voorstel 2</span>
+                </div>
+                <div class="proposal-body">
+                    <p class="proposal-description">Sophisticated magazine-style layout. Professioneel en journalistiek design.</p>
+                    <a href="proposal_2_editorial/index.html" class="proposal-link">Bekijk Design →</a>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- SHOWCASE SECTION -->
-    <section style="background-color: #f5f5f5;">
-        <div class="container">
-            <h2>Onze Kamers</h2>
-            <p style="text-align: center; color: #666; max-width: 600px; margin: 1rem auto;">
-                9 unieke kamers met moderne voorzieningen, perfect voor het studentenleven
-            </p>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="rooms.html" class="btn btn-primary">Ontdek alle kamers</a>
+            <!-- Proposal 3: Dark -->
+            <div class="proposal-card">
+                <div class="proposal-header">
+                    <h2>Dark</h2>
+                    <span class="proposal-number">Voorstel 3</span>
+                </div>
+                <div class="proposal-body">
+                    <p class="proposal-description">Modern dark theme met contrast. Chique en contemporary uitstraling.</p>
+                    <a href="proposal_3_dark/index.html" class="proposal-link">Bekijk Design →</a>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <h2>Neem Contact Op</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p>📧 <a href="mailto:[EMAIL HERE]">[EMAIL HERE]</a></p>
-                    <p>📞 <a href="tel:[PHONE HERE]">[PHONE HERE]</a></p>
-                    <p>📍 Tabakvest 85, Antwerpen, België</p>
+            <!-- Proposal 4: Boutique -->
+            <div class="proposal-card">
+                <div class="proposal-header">
+                    <h2>Boutique</h2>
+                    <span class="proposal-number">Voorstel 4</span>
+                </div>
+                <div class="proposal-body">
+                    <p class="proposal-description">Luxury boutique aesthetic. Elegante en exclusieve presentatie.</p>
+                    <a href="proposal_4_boutique/index.html" class="proposal-link">Bekijk Design →</a>
+                </div>
+            </div>
+
+            <!-- Proposal 5: Cinematic -->
+            <div class="proposal-card">
+                <div class="proposal-header">
+                    <h2>Cinematic</h2>
+                    <span class="proposal-number">Voorstel 5</span>
+                </div>
+                <div class="proposal-body">
+                    <p class="proposal-description">Dramatic, visually-focused design. Immersive en impactvolle beleving.</p>
+                    <a href="proposal_5_cinematic/index.html" class="proposal-link">Bekijk Design →</a>
+                </div>
+            </div>
+
+            <!-- Proposal 6: Plain -->
+            <div class="proposal-card">
+                <div class="proposal-header">
+                    <h2>Plain</h2>
+                    <span class="proposal-number">Voorstel 6</span>
+                </div>
+                <div class="proposal-body">
+                    <p class="proposal-description">Simple & straightforward layout. Geen afleidingen, puur functionaliteit.</p>
+                    <a href="proposal_6_plain/index.html" class="proposal-link">Bekijk Design →</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 Tabakvest 85. Alle rechten voorbehouden.</p>
-        <p>Professionele studentenhuisvesting in Antwerpen</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+    </div>
 </body>
 </html>
