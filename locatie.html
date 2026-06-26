@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locatie & Bereikbaarheid - Tabakvest 85</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .location-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-2xl);
+            align-items: center;
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .location-section.reverse {
+            grid-auto-flow: dense;
+        }
+
+        .location-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .location-text h3 {
+            margin-bottom: var(--spacing-lg);
+            color: var(--accent);
+        }
+
+        .location-text p {
+            color: var(--dark-gray);
+            line-height: 1.8;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .highlight-card {
+            background-color: var(--light-gray);
+            padding: var(--spacing-xl);
+            border-radius: 2px;
+            text-align: center;
+        }
+
+        .highlight-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .highlight-card h4 {
+            color: var(--accent);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .highlight-card p {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .map-section {
+            background-color: var(--light-gray);
+            padding: var(--spacing-2xl);
+            border-radius: 2px;
+            text-align: center;
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .contact-box {
+            background-color: var(--accent);
+            color: var(--white);
+            padding: var(--spacing-2xl);
+            border-radius: 2px;
+            text-align: center;
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .contact-box h3 {
+            color: var(--white);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-box a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.5rem 1rem;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .location-section {
+                grid-template-columns: 1fr;
+            }
+
+            .location-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Tabakvest 85</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Kamers</a></li>
+                <li><a href="locatie.html" class="active">Locatie</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="min-height: 400px;">
+        <div class="hero-content">
+            <h1>Onze Locatie</h1>
+            <p>Hartje Antwerpen - Ideaal gelegen voor studenten</p>
+            <p style="font-size: 1rem; font-weight: 300;">Tabakvest 85 | Antwerpen, België</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section>
+        <div class="container">
+            <!-- INTRO TEXT -->
+            <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: var(--spacing-2xl);">
+                <p style="font-size: 1.1rem; color: var(--dark-gray); line-height: 1.8;">
+                    Tabakvest 85 bevindt zich in een unieke locatie in de 16de-eeuwse binnenstad van Antwerpen. Een plek waar geschiedenis, student energie en moderne voorzieningen perfect samenkomen.
+                </p>
+            </div>
+
+            <!-- SECTION 1: THE STREET -->
+            <div class="location-section">
+                <div class="location-text">
+                    <h3>🏘️ Woonerf - De Straat is van Iedereen</h3>
+                    <p>
+                        Tabakvest is heringericht als een woonerf. Dit betekent dat wandelaars en fietsers hier baas zijn. De straat is een veilige, rustige en aangename plek waar studenten kunnen studeren, relaxen en elkaar ontmoeten. Perfect voor concentratie en een goed nachtrust!
+                    </p>
+                    <p>
+                        <strong>Voordeel:</strong> Minder verkeer = minder lawaai = beter studeren
+                    </p>
+                </div>
+                <img src="pictures/antwerpen.jpg" alt="Tabakvest straat" class="location-image">
+            </div>
+
+            <!-- SECTION 2: BUSTLING NEIGHBORHOOD -->
+            <div class="location-section reverse">
+                <img src="pictures/leopold.jpg" alt="Leopoldplaats" class="location-image">
+                <div class="location-text">
+                    <h3>🎭 Bruisende Buurt - Levendig Studenten Centrum</h3>
+                    <p>
+                        Direct om de hoek van Tabakvest liggen twee van de meest levendige pleinen van Antwerpen: de Leopoldplaats en de Oudevaartplaats (bekend als "de vogeltjesmarkt"). Deze pleinen zijn het hart van het studentenleven met talloze cafés, restaurants en bars.
+                    </p>
+                    <p>
+                        De Stadsschouwburg is letterlijk om de hoek, wat betekent dat theater, cinema en culturele evenementen direct beschikbaar zijn.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SECTION 3: VOGELMARKT -->
+            <div class="location-section">
+                <div class="location-text">
+                    <h3>🐦 Oudevaartplaats - De Vogeltjesmarkt</h3>
+                    <p>
+                        Deze historische markt is een echte Antwerp geheimtip. Hier vind je gezelligheid, lokale winkels, antiquairs en vooral veel sfeer. Perfect voor een zondagochtend wandeling of een koffie op een terras.
+                    </p>
+                    <p>
+                        <strong>Loopafstand:</strong> Slechts 2 minuten van Tabakvest 85
+                    </p>
+                </div>
+                <img src="pictures/vogelmarkt.jpg" alt="Vogelmarkt" class="location-image">
+            </div>
+
+            <!-- KEY LOCATIONS HIGHLIGHTS -->
+            <h2 style="text-align: center; margin: var(--spacing-2xl) 0;">Alles Binnen Handbereik</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🛍️</div>
+                    <h4>Winkelzone Meir</h4>
+                    <p>5 minuten lopen - De chique winkelstraat van Antwerpen met alle grote merken</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎓</div>
+                    <h4>Hogescholen & Universiteiten</h4>
+                    <p>Directe omgeving - KASK, AP, UA en andere onderwijsinstellingen in de buurt</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon">🚌</div>
+                    <h4>Openbaar Vervoer</h4>
+                    <p>Om de hoek - Halte Antwerpen Nationale Bank (tram, bus) voor gemakkelijk reizen</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon">🚂</div>
+                    <h4>Centraal Station</h4>
+                    <p>Wandelafstand - Gemakkelijke verbindingen naar overal in België</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon">🍽️</div>
+                    <h4>Restaurants & Cafés</h4>
+                    <p>Overal in de buurt - Van studentencafés tot fine dining, alles is dicht bij</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏃</div>
+                    <h4>Groenruimtes</h4>
+                    <p>10 minuten - Park en griffen voor ontspanning en sporten</p>
+                </div>
+            </div>
+
+            <!-- TRANSPORT INFO -->
+            <div class="map-section">
+                <h3 style="color: var(--black); margin-bottom: var(--spacing-lg);">📍 Bereikbaarheid</h3>
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <p style="color: var(--dark-gray); line-height: 1.8; margin-bottom: var(--spacing-lg);">
+                        <strong>Adres:</strong> Tabakvest 85, 2000 Antwerpen<br><br>
+                        <strong>Met Auto:</strong> Voldoende parkeerplekken in de wijk (betaald parkeren)<br>
+                        <strong>Met Fiets:</strong> Antwerpen is fietsenstadstad - fietspaden overal<br>
+                        <strong>Met OV:</strong> Halte Antwerpen Nationale Bank is 30 seconden lopen<br>
+                        <strong>Te Voet:</strong> Alles is loopafstand in het centrum
+                    </p>
+                </div>
+            </div>
+
+            <!-- WHY THIS LOCATION -->
+            <div style="max-width: 900px; margin: var(--spacing-2xl) auto; text-align: center; background-color: var(--light-gray); padding: var(--spacing-2xl); border-radius: 2px;">
+                <h3 style="color: var(--accent); margin-bottom: var(--spacing-lg);">Waarom Tabakvest 85 de Perfecte Locatie is</h3>
+                <ul style="text-align: left; color: var(--dark-gray); line-height: 2; list-style: none; max-width: 600px; margin: 0 auto;">
+                    <li>✓ <strong>Rustig wonen:</strong> Woonerf = veilige, rustige straat</li>
+                    <li>✓ <strong>Levendig uitgaan:</strong> Leopoldplaats & Vogelmarkt om de hoek</li>
+                    <li>✓ <strong>Centraal gelegen:</strong> Alles bereikbaar te voet of fiets</li>
+                    <li>✓ <strong>Goed vervoerd:</strong> Openbaar vervoer en treinstation dicht bij</li>
+                    <li>✓ <strong>Studeervriendelijk:</strong> Rustig en vol medestudenten in de buurt</li>
+                    <li>✓ <strong>Historisch centrum:</strong> Unieke sfeer van Antwerpen</li>
+                </ul>
+            </div>
+
+            <!-- CONTACT BOX -->
+            <div class="contact-box">
+                <h3>Interesse? Kom eens langs!</h3>
+                <p style="margin-bottom: var(--spacing-lg);">
+                    Bel ons of stuur een mail, we geven graag een rondleiding door Tabakvest en de buurt.
+                </p>
+                <p>
+                    <a href="mailto:tabakvest85@gmail.com">📧 tabakvest85@gmail.com</a><br>
+                    <a href="tel:+32495916513">📞 +32 495 91 65 13</a>
+                </p>
+                <p style="margin-top: var(--spacing-lg); font-size: 0.9rem;">
+                    Volg ons ook op Facebook: <a href="https://facebook.com" target="_blank">Tabakvest 85</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Tabakvest 85. Alle rechten voorbehouden.</p>
+        <p>Professionele studentenhuisvesting in Antwerpen</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
