@@ -11,7 +11,7 @@ async function loadRooms() {
 
 function buildRoomCard(r) {
   const cover = `pictures/kamer ${r.id}/${(r.images && r.images[0]) || '1.jpg'}`;
-  const thumbAlt = `${r.name}: ${r.size}m² - ${EUR(r.rent)} per maand`;
+  const thumbAlt = `${r.name}: ${r.size}m²`;
   return `<article class="room-card">
     <a href="room-${r.id}.html">
       <div class="thumb"><img src="${cover}" alt="${thumbAlt}" loading="lazy"></div>
