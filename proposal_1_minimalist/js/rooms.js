@@ -116,4 +116,8 @@ loadRooms().then(data => {
   filterGrid('all');
   buildDetail(data);
   document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  // Initialize SimpleLightbox after room content is loaded
+  if (typeof SimpleLightbox !== 'undefined') {
+    new SimpleLightbox('[data-glightbox]');
+  }
 }).catch(() => { const e = document.querySelector('.loading'); if (e) e.textContent = 'Kon kamergegevens niet laden.'; });

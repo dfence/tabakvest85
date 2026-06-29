@@ -63,3 +63,12 @@ function toggleMobileMenu() {
         nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
     }
 }
+
+// Initialize SimpleLightbox for gallery images
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('[data-glightbox]');
+    if (images.length > 0 && typeof SimpleLightbox !== 'undefined') {
+        new SimpleLightbox('[data-glightbox]');
+        console.log(`SimpleLightbox initialized with ${images.length} images`);
+    }
+});
