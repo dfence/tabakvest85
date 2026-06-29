@@ -58,7 +58,7 @@ function buildDetail(data) {
     </div></div>
     <div class="container">
       <div class="detail-meta">
-        <div><div class="k">Grootte</div><div class="v">${r.size} m²</div></div>
+        <div><div class="k">Grootte</div><div class="v">${r.size + r.loft} m²</div></div>
         <div><div class="k">Huur</div><div class="v">${EUR(r.rent)}</div></div>
         <div><div class="k">Kosten</div><div class="v">${EUR(r.costs)}</div></div>
         <div><div class="k">Status</div><div class="v"><span class="status ${r.status}">${statusLabel(r.status)}</span></div></div>
