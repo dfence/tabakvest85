@@ -49,7 +49,7 @@ function buildDetail(data) {
   const s = data.settings;
   document.title = `${r.name} — Tabakvest 85`;
   const imgs = (r.images && r.images.length ? r.images : ['1.jpg']);
-  const slides = imgs.map(f => `<img src="pictures/kamer ${r.id}/${f}" alt="${r.name}" loading="lazy">`).join('');
+  const slides = imgs.map(f => `<img src="pictures/kamer ${r.id}/${f}" alt="${r.name}" loading="lazy" data-glightbox="gallery=room${r.id}">`).join('');
   const dots = imgs.map((_, i) => `<button data-i="${i}" class="${i===0?'active':''}" aria-label="Foto ${i+1}"></button>`).join('');
   const highlights = (r.highlights || []).map(h => `<li>${h}</li>`).join('');
   wrap.innerHTML = `
