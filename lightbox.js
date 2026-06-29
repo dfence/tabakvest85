@@ -134,9 +134,16 @@ class SimpleLightbox {
   }
 }
 
-// Initialize on DOM ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => new SimpleLightbox());
-} else {
-  new SimpleLightbox();
-}
+// Initialize on DOM ready or immediately if already loaded
+(function() {
+  function init() {
+    new SimpleLightbox();
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    // Use setTimeout to ensure DOM is fully ready
+    setTimeout(init, 0);
+  }
+})();
