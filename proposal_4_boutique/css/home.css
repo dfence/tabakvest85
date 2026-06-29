@@ -104,6 +104,16 @@ nav ul a.active::after { content: ''; position: absolute; left: 50%; transform: 
 .btn-secondary { background: transparent; color: var(--brown); border-color: var(--brown); }
 .btn-secondary:hover { background: var(--brown); color: var(--cream); transform: translateY(-2px); }
 
+/* ---- accessibility: keyboard focus ---- */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--terra);
+  outline-offset: 2px;
+}
+
 /* ============================ ABOUT ============================ */
 .about { padding: 5.5rem 0; }
 .about .container { max-width: 900px; text-align: center; }
@@ -178,4 +188,13 @@ footer p + p { margin-top: 0.4rem; font-size: 0.72rem; letter-spacing: 0.12em; t
   nav ul li { width: 100%; text-align: center; }
   nav ul li a { display: block; padding: 0.9rem 0; }
   .hero-actions .btn { flex: 1; justify-content: center; }
+}
+
+/* ============================ ACCESSIBILITY: REDUCED MOTION ============================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

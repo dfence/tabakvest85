@@ -76,6 +76,16 @@ nav.scrolled { background: rgba(10,10,11,0.82); backdrop-filter: blur(14px); -we
 .btn-secondary { background: transparent; color: var(--paper); }
 .btn-secondary:hover { background: var(--paper); color: var(--ink); }
 
+/* ---- accessibility: keyboard focus ---- */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--sand);
+  outline-offset: 2px;
+}
+
 /* ---- about: cinematic statement over image ---- */
 .statement-scene { align-items: center; text-align: center; }
 .statement-scene .bg { background-image: url('../pictures/antwerpen.jpg'); }
@@ -137,4 +147,13 @@ footer p + p { margin-top: 0.4rem; font-size: 0.68rem; letter-spacing: 0.22em; t
   .hero-actions .btn { flex: 1; text-align: center; }
   .scrollcue { display: none; }
   .scene .bg { inset: 0; } /* disable parallax overscan on mobile */
+}
+
+/* ============================ ACCESSIBILITY: REDUCED MOTION ============================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

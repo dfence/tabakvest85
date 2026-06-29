@@ -169,6 +169,16 @@ nav ul a:hover::after, nav ul a.active::after { width: 100%; }
 .btn-primary:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
 .btn-secondary:hover { background: var(--ink); color: var(--bg); }
 
+/* ---- accessibility: keyboard focus ---- */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
 /* ============================ ABOUT ============================ */
 .about { padding: 6.5rem 0; border-top: 1px solid var(--line); }
 .about .container { max-width: 760px; text-align: center; }
@@ -258,4 +268,13 @@ footer p + p { margin-top: 0.4rem; font-size: 0.72rem; letter-spacing: 0.2em; te
   nav ul li { width: 100%; text-align: center; }
   nav ul li a { display: block; padding: 1.1rem 0; border-top: 1px solid var(--line); }
   .hero-actions .btn { flex: 1; text-align: center; }
+}
+
+/* ============================ ACCESSIBILITY: REDUCED MOTION ============================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
