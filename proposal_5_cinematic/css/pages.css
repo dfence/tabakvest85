@@ -463,6 +463,14 @@
   grid-column: 1/-1;
 }
 
+/* ---- accessibility: keyboard focus ---- */
+.filter-btn:focus,
+.carousel-btn:focus,
+.carousel-dots button:focus {
+  outline: 2px solid var(--sand);
+  outline-offset: 2px;
+}
+
 /* ---- responsive ---- */
 @media (max-width: 900px) {
   .rooms-grid {

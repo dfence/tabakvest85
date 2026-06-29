@@ -83,7 +83,7 @@ function buildDetail(data) {
           <div><span>Huurwaarborg</span><span>${s.deposit}</span></div>
           <div><span>Huurperiode</span><span>${s.rentalPeriod}</span></div>
           <div><span>Keuken</span><span>Gemeenschappelijk</span></div>
-          <div><span>Internet</span><span>Gigabit WiFi</span></div>
+          <div><span>Internet</span><span>Gigabit Internet + WiFi</span></div>
         </div>
         <div class="detail-cta">
           <h2>Interesse in ${r.name}?</h2>

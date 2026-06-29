@@ -30,7 +30,7 @@
 
 **Recommended Titles (all proposals, same content):**
 - **Homepage (`index.html`):** `"Studentenkamers Antwerpen centrum | Tabakvest 85 – Moderne kamers met eigen badkamer"`
-- **Kamers page (`rooms.html`):** `"9 Studentenkamers in Antwerpen | Tabakvest 85 – Eigen badkamer & Gigabit WiFi"`
+- **Kamers page (`rooms.html`):** `"9 Studentenkamers in Antwerpen | Tabakvest 85 – Eigen badkamer & Gigabit Internet + WiFi"`
 - **Room detail pages (`room-1.html` through `room-9.html`):**
   - Kamer 1: `"Kamer 1 – 22m² (+ 11m² hoogslaper) | Studentenkamer Antwerpen | €536/maand"`
   - Kamer 2: `"Kamer 2 – 24m² (+ 8m² hoogslaper) met terrasje | Studentenkamer | €612/maand"`

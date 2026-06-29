@@ -82,5 +82,13 @@
 .loc-map { padding: 2rem 0 6rem; }
 .map-embed { width: 100%; aspect-ratio: 21/9; border: 1px solid var(--line); }
 
+/* ---- accessibility: keyboard focus ---- */
+.filter-btn:focus,
+.carousel-btn:focus,
+.carousel-dots button:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
 @media (max-width: 900px) { .rooms-grid { grid-template-columns: repeat(2,1fr); } .loc-grid { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 0; } .loc-grid.reverse img { order: 0; } }
 @media (max-width: 640px) { .rooms-grid { grid-template-columns: 1fr; } .detail-meta { grid-template-columns: 1fr 1fr; } .spec-grid { grid-template-columns: 1fr; } }
