@@ -1,0 +1,211 @@
+{
+  "_comment": "SINGLE SOURCE OF TRUTH for all 9 rooms. Edit this file only; every room page reads it. status='vrij'|'verhuurd'. rent/costs in EUR/month. images=filenames inside pictures/kamer N/ (add or remove freely; carousel adapts).",
+  "settings": {
+    "currency": "EUR",
+    "deposit": "2 maanden huur",
+    "rentalPeriod": "15/09 - 14/09",
+    "costsInclude": "verwarming, internet, water"
+  },
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Kamer 1",
+      "status": "verhuurd",
+      "rent": 536,
+      "costs": 150,
+      "size": 22,
+      "loft": 11,
+      "type": "Gelijkvloers · voorzijde",
+      "description": "Gelegen aan de voorzijde van onze studentenwoning op de gelijkvloerse verdieping. De grote ramen bieden zeer veel lichtinval, de hoogslaper van 11 m\u00b2 is hier zeker een pluspunt.",
+      "highlights": [
+        "Gelegen op gelijkvloers aan de voorkant",
+        "Oppervlakte 22 m\u00b2 (+ 11 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Keramische vloer in de ganse kamer, volledige betegeling in de badkamer",
+        "Hoge dubbele kleerkast voor o.a. kleerhangers",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat",
+        "2 hoge (draaikip)ramen met vaste bovenlichten",
+        "Bureau en kastje"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    },
+    {
+      "id": 2,
+      "name": "Kamer 2",
+      "status": "verhuurd",
+      "rent": 612,
+      "costs": 150,
+      "size": 24,
+      "loft": 8,
+      "type": "Gelijkvloers · achterzijde",
+      "description": "Gelegen aan de achterzijde op de gelijkvloerse verdieping. Met achteraan een groot schuifraam dat toegang verleent tot een priv\u00e9-terrasje.",
+      "highlights": [
+        "Gelegen op gelijkvloers aan de achterzijde",
+        "Oppervlakte 24 m\u00b2 (+ 8 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Keramische vloer in de ganse kamer, volledige betegeling in de badkamer",
+        "Hoge dubbele kleerkast voor o.a. kleerhangers",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat",
+        "1 hoog schuifraam"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    },
+    {
+      "id": 3,
+      "name": "Kamer 3",
+      "status": "verhuurd",
+      "rent": 592,
+      "costs": 150,
+      "size": 20,
+      "loft": 12,
+      "type": "Duplex · 1e verdieping achterzijde",
+      "description": "Een heuse duplex. Gelegen op de eerste verdieping aan de achterzijde van de woning.",
+      "highlights": [
+        "Gelegen op de eerste verdieping aan de achterzijde",
+        "Oppervlakte 20 m\u00b2 (+ 12 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Vloeren in laminaat op een ge\u00efsoleerde ondergrond, volledige betegeling in badkamer",
+        "Hoge dubbele kleerkast",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    },
+    {
+      "id": 4,
+      "name": "Kamer 4",
+      "status": "verhuurd",
+      "rent": 535,
+      "costs": 150,
+      "size": 16,
+      "loft": 8,
+      "type": "1e verdieping · achterkant",
+      "description": "Rustig gelegen kamer aan de achterzijde met een hoogslaper van 8 m\u00b2.",
+      "highlights": [
+        "Gelegen op de eerste verdieping aan achterkant",
+        "Oppervlakte 16 m\u00b2 (+ 8 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Vloeren in moderne laminaat-parket op een ge\u00efsoleerde ondergrond, volledige betegelde badkamer",
+        "Hoge dubbele kleerkast",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat",
+        "Hoge (draaikip)ramen met vaste bovenlichten"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    },
+    {
+      "id": 5,
+      "name": "Kamer 5",
+      "status": "verhuurd",
+      "rent": 612,
+      "costs": 150,
+      "size": 22,
+      "loft": 8,
+      "type": "1e verdieping · voorkant",
+      "description": "Een oase van licht, met 3 grote raampartijen en een hoogslaper van 8 m\u00b2. Op deze kamer kan je comfortabel met z'n twee verblijven.",
+      "highlights": [
+        "Gelegen op de eerste verdieping aan voorkant",
+        "Oppervlakte 22 m\u00b2 (+ 8 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Vloeren in moderne laminaat-parket op een ge\u00efsoleerde ondergrond, volledige betegelde badkamer",
+        "Hoge dubbele kleerkast",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat",
+        "3 hoge (draaikip)ramen met vaste bovenlichten"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    },
+    {
+      "id": 6,
+      "name": "Kamer 6",
+      "status": "verhuurd",
+      "rent": 630,
+      "costs": 150,
+      "size": 28,
+      "loft": 8,
+      "type": "2e verdieping · achterkant",
+      "description": "Rustig gelegen, ruime kamer aan de achterzijde met een hoogslaper van 8 m\u00b2 en een aparte leefruimte. Op deze kamer kan je comfortabel met z'n twee verblijven.",
+      "highlights": [
+        "Gelegen op de tweede verdieping aan achterkant",
+        "Oppervlakte 28 m\u00b2 (+ 8 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Vloeren in moderne laminaat-parket op een ge\u00efsoleerde ondergrond, volledige betegelde badkamer",
+        "Hoge dubbele kleerkast",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat",
+        "Hoge (draaikip)ramen met vaste bovenlichten",
+        "Aparte tv-hoek"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    },
+    {
+      "id": 7,
+      "name": "Kamer 7",
+      "status": "verhuurd",
+      "rent": 606,
+      "costs": 150,
+      "size": 22,
+      "loft": 8,
+      "type": "2e verdieping · voorkant",
+      "description": "Een oase van licht, met 3 grote raampartijen en een hoogslaper van 8 m\u00b2. Op deze kamer kan je comfortabel met z'n twee verblijven.",
+      "highlights": [
+        "Gelegen op de tweede verdieping aan voorkant",
+        "Oppervlakte 22 m\u00b2 (+ 8 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Vloeren in moderne laminaat-parket op een ge\u00efsoleerde ondergrond, volledige betegelde badkamer",
+        "Hoge dubbele kleerkast",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat",
+        "Bureau en kastje"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    },
+    {
+      "id": 8,
+      "name": "Kamer 8",
+      "status": "verhuurd",
+      "rent": 580,
+      "costs": 150,
+      "size": 18,
+      "loft": 8,
+      "type": "Duplex · 3e verdieping achterkant",
+      "description": "Rustig gelegen, ruime duplex-kamer aan de achterzijde met groot Velux-raam.",
+      "highlights": [
+        "Gelegen op de derde verdieping aan achterkant",
+        "Oppervlakte 18 m\u00b2 (+ 8 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Vloeren in moderne laminaat-parket op een ge\u00efsoleerde ondergrond, volledige betegelde badkamer",
+        "Hoge dubbele kleerkast",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat",
+        "Velux ramen, uitklapbaar, type GGU",
+        "Bureau en kastje"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    },
+    {
+      "id": 9,
+      "name": "Kamer 9",
+      "status": "verhuurd",
+      "rent": 632,
+      "costs": 150,
+      "size": 22,
+      "loft": 10,
+      "type": "Duplex · 3e verdieping voorkant",
+      "description": "Een oase van licht aan de voorzijde met duplex-gedeelte van 10 m\u00b2. Op deze kamer kan je comfortabel met z'n twee verblijven.",
+      "highlights": [
+        "Gelegen op de derde verdieping aan voorkant",
+        "Oppervlakte 22 m\u00b2 (+ 10 m\u00b2 hoogslaper)",
+        "Badkamer met douche, lavabo en hangtoilet",
+        "Keukenhoek met combi-oven en koelkast",
+        "Vloeren in moderne laminaat-parket op een ge\u00efsoleerde ondergrond, volledige betegelde badkamer",
+        "Hoge dubbele kleerkast",
+        "Hoogslaper met dubbele lattenbodem afgeschermd door een matte glasplaat",
+        "4 Velux ramen \u2013 volledig uitklapbaar"
+      ],
+      "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    }
+  ]
+}
