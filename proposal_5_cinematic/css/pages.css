@@ -12,6 +12,18 @@
   padding-bottom: 4rem;
   overflow: hidden;
   background: var(--ink);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(10,10,11,0.4) 0%, rgba(10,10,11,0.2) 40%, rgba(10,10,11,0.85) 100%);
+  pointer-events: none;
 }
 
 .page-hero .bg {
@@ -504,3 +516,47 @@
     padding: 1.8rem;
   }
 }
+
+/* ---- locatie/location page ---- */
+.page-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(10,10,11,0.4) 0%, rgba(10,10,11,0.2) 40%, rgba(10,10,11,0.85) 100%);
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.loc-feature { padding: 1rem 0 2rem; }
+.loc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; padding: 4rem 0; }
+.loc-grid.reverse img { order: 2; }
+.loc-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 20px; }
+.loc-grid h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); margin: 0.4rem 0 1.2rem; color: var(--sand); }
+.loc-grid p { color: var(--muted); margin-bottom: 1.2rem; line-height: 1.8; }
+.loc-grid .btn { margin-top: 0.8rem; }
+.loc-points { list-style: none; } .loc-points li { padding: 0.85rem 0 0.85rem 1.8rem; position: relative; color: var(--muted); } .loc-points li::before { content: '?'; position: absolute; left: 0; color: var(--sand); font-weight: 700; }
+.loc-wide { padding: 3rem 0; }
+.loc-wide .container { position: relative; }
+.loc-wide img { width: 100%; aspect-ratio: 21/9; object-fit: cover; border-radius: 20px; }
+.loc-caption { display: block; text-align: center; margin-top: 1.2rem; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sand); font-weight: 600; }
+.loc-map { padding: 3rem 0 6rem; }
+.map-embed { width: 100%; aspect-ratio: 21/9; border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; }
+
+@media (max-width: 900px) { .loc-grid { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 0; } .loc-grid.reverse img { order: 0; } }

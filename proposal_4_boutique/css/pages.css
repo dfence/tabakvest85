@@ -66,9 +66,19 @@
 .loading { text-align: center; padding: 6rem 0; color: var(--muted); }
 
 /* ---- locatie ---- */
-.loc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding: 3rem 0; }
+.loc-feature { padding: 1rem 0 2rem; }
+.loc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; padding: 4rem 0; }
+.loc-grid.reverse img { order: 2; }
 .loc-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
+.loc-grid h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); margin: 0.4rem 0 1.2rem; color: var(--terra-deep); }
+.loc-grid p { color: var(--muted); margin-bottom: 1.2rem; }
+.loc-grid .btn { margin-top: 0.8rem; }
 .loc-points { list-style: none; } .loc-points li { padding: 0.85rem 0 0.85rem 1.8rem; position: relative; color: var(--muted); } .loc-points li::before { content: '\2713'; position: absolute; left: 0; color: var(--terra); font-weight: 700; }
+.loc-wide { padding: 2rem 0; }
+.loc-wide .container { position: relative; }
+.loc-wide img { width: 100%; aspect-ratio: 21/9; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
+.loc-caption { display: block; text-align: center; margin-top: 1.2rem; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terra-deep); font-weight: 700; }
+.loc-map { padding: 2rem 0 6rem; }
 .map-embed { width: 100%; aspect-ratio: 21/9; border: none; border-radius: var(--radius); box-shadow: var(--shadow); }
 
 @media (max-width: 900px) { .rooms-grid { grid-template-columns: repeat(2,1fr); } .loc-grid { grid-template-columns: 1fr; } }
