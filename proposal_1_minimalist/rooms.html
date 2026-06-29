@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onze Kamers — Tabakvest 85</title>
+    <meta name="description" content="9 unieke studentenkamers in hartje Antwerpen, elk met eigen badkamer, gigabit wifi en het Vlaams kwaliteitslabel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Tabakvest<span>.</span>85</a>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html" class="active">Kamers</a></li>
+                <li><a href="locatie.html">Locatie</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <p class="eyebrow">De Kamers</p>
+            <h1>Onze Studentenkamers</h1>
+            <p>9 unieke kamers met moderne voorzieningen, elk met eigen badkamer en het Vlaams kwaliteitslabel.</p>
+        </div>
+    </header>
+
+    <section class="rooms">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">Alle kamers</button>
+                <button class="filter-btn" data-filter="vrij">Vrij</button>
+                <button class="filter-btn" data-filter="verhuurd">Verhuurd</button>
+            </div>
+            <div class="rooms-grid"><p class="loading">Kamers laden…</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tabakvest 85. Alle rechten voorbehouden.</p>
+        <p>Studentenhuisvesting in Antwerpen</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/rooms.js"></script>
+</body>
+</html>
