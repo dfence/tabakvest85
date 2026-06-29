@@ -74,10 +74,11 @@ class SimpleLightbox {
 
     document.body.appendChild(modal);
 
-    // Event listeners
-    document.getElementById('lightbox-close').addEventListener('click', () => this.close());
-    document.getElementById('lightbox-prev').addEventListener('click', () => this.prev());
-    document.getElementById('lightbox-next').addEventListener('click', () => this.next());
+    // Event listeners - use window reference to ensure correct context
+    const self = this;
+    document.getElementById('lightbox-close').addEventListener('click', () => self.close());
+    document.getElementById('lightbox-prev').addEventListener('click', () => self.prev());
+    document.getElementById('lightbox-next').addEventListener('click', () => self.next());
 
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
@@ -123,27 +124,21 @@ class SimpleLightbox {
 
   next() {
     const images = this.galleries[this.currentGallery];
+    if (!images || images.length === 0) {
+      console.error('SimpleLightbox: No images found for gallery', this.currentGallery, 'Available galleries:', Object.keys(this.galleries));
+      return;
+    }
     this.currentIndex = (this.currentIndex + 1) % images.length;
     this.showImage();
   }
 
   prev() {
     const images = this.galleries[this.currentGallery];
+    if (!images || images.length === 0) {
+      console.error('SimpleLightbox: No images found for gallery', this.currentGallery, 'Available galleries:', Object.keys(this.galleries));
+      return;
+    }
     this.currentIndex = (this.currentIndex - 1 + images.length) % images.length;
     this.showImage();
   }
 }
-
-// Initialize on DOM ready or immediately if already loaded
-(function() {
-  function init() {
-    new SimpleLightbox();
-  }
-  
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else if (document.readyState === 'interactive' || document.readyState === 'complete') {
-    // Use setTimeout to ensure DOM is fully ready
-    setTimeout(init, 0);
-  }
-})();
