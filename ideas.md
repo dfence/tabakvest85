@@ -1,4 +1,4 @@
-# Website Audit & Improvement Ideas — Tabakvest 85
+﻿# Website Audit & Improvement Ideas — Tabakvest 85
 
 **Date:** June 29, 2026  
 **Scope:** Audit of 3 design proposals (proposal_1_minimalist, proposal_4_boutique, proposal_5_cinematic)  
@@ -315,7 +315,7 @@ Sticky footer on mobile:
 
 **Current State:**
 ```
-© 2024 Tabakvest 85. Alle rechten voorbehouden.
+© 2026 Tabakvest 85. Alle rechten voorbehouden.
 Studentenhuisvesting in Antwerpen
 ```
 
@@ -569,3 +569,4 @@ section {
 ---
 
 **End of Audit Document**
+

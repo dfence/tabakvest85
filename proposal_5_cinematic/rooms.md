@@ -1,4 +1,4 @@
-# Tabakvest 85 — Kamerinformatie
+﻿# Tabakvest 85 — Kamerinformatie
 
 Master record of all 9 rooms. Source: https://sites.google.com/view/tabakvest-85/kamers
 
@@ -252,3 +252,4 @@ deze kamer kan je comfortabel met z'n twee verblijven.
 - Voorzieningen: eigen douche/toilet, gigabit wifi, kabel-tv, koelkast, combi-oven
 
 **Foto's:** pictures/kamer 9/
+
