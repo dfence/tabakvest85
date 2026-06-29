@@ -551,7 +551,7 @@
 .loc-grid h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); margin: 0.4rem 0 1.2rem; color: var(--sand); }
 .loc-grid p { color: var(--muted); margin-bottom: 1.2rem; line-height: 1.8; }
 .loc-grid .btn { margin-top: 0.8rem; }
-.loc-points { list-style: none; } .loc-points li { padding: 0.85rem 0 0.85rem 1.8rem; position: relative; color: var(--muted); } .loc-points li::before { content: '?'; position: absolute; left: 0; color: var(--sand); font-weight: 700; }
+.loc-points { list-style: none; } .loc-points li { padding: 0.85rem 0 0.85rem 1.8rem; position: relative; color: var(--muted); } .loc-points li::before { content: '→'; position: absolute; left: 0; color: var(--sand); font-weight: 700; }
 .loc-wide { padding: 3rem 0; }
 .loc-wide .container { position: relative; }
 .loc-wide img { width: 100%; aspect-ratio: 21/9; object-fit: cover; border-radius: 20px; }
