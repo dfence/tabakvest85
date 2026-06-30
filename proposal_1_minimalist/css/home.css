@@ -266,10 +266,12 @@ footer p + p { margin-top: 0.4rem; font-size: 0.72rem; letter-spacing: 0.2em; te
     gap: 0; padding: 0;
     border-bottom: none;
     max-height: 0; overflow: hidden;
-    transition: max-height 0.45s var(--ease);
+    transition: max-height 0.45s var(--ease), opacity 0.45s var(--ease);
     z-index: 99;
+    opacity: 0;
+    visibility: hidden;
   }
-  nav ul.active { max-height: 100vh; overflow-y: auto; }
+  nav ul.active { max-height: 100vh; opacity: 1; visibility: visible; overflow-y: auto; }
   nav ul li { width: 100%; text-align: center; border-top: 1px solid var(--line); }
   nav ul li:first-child { border-top: none; }
   nav ul li a { display: block; padding: 1.6rem 0; font-size: 1rem; letter-spacing: 0.1em; }
