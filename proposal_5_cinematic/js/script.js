@@ -42,6 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Handle nav scroll effect - add dark background when scrolling
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
