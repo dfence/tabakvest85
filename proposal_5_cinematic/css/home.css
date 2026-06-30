@@ -137,6 +137,8 @@ footer p + p { margin-top: 0.4rem; font-size: 0.68rem; letter-spacing: 0.22em; t
 }
 @media (max-width: 720px) {
   .hamburger { display: flex; }
+  /* backdrop-filter on an ancestor creates a containing block that traps position:fixed children inside the nav bar (this is why the menu broke after scrolling), so disable it on mobile and use a solid bar background instead */
+  nav.scrolled { background: rgba(10, 10, 11, 0.95); -webkit-backdrop-filter: none; backdrop-filter: none; }
   nav ul {
     position: fixed; top: 80px; left: 0; right: 0; bottom: 0;
     background: rgba(10,10,11,0.97);

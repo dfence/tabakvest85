@@ -257,6 +257,8 @@ footer p + p { margin-top: 0.4rem; font-size: 0.72rem; letter-spacing: 0.2em; te
 }
 @media (max-width: 720px) {
   .hamburger { display: flex; }
+  /* backdrop-filter on an ancestor creates a containing block that traps position:fixed children inside the nav bar, so disable it on mobile and use a solid bar background instead */
+  nav { background: rgba(250, 248, 244, 0.98); -webkit-backdrop-filter: none; backdrop-filter: none; }
   nav ul {
     position: fixed; top: 84px; left: 0; right: 0; bottom: 0;
     background: rgba(250, 248, 244, 0.95);
