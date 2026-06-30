@@ -258,17 +258,21 @@ footer p + p { margin-top: 0.4rem; font-size: 0.72rem; letter-spacing: 0.2em; te
 @media (max-width: 720px) {
   .hamburger { display: flex; }
   nav ul {
-    position: absolute; top: 84px; left: 0; right: 0;
-    background: var(--bg);
+    position: fixed; top: 84px; left: 0; right: 0; bottom: 0;
+    background: rgba(250, 248, 244, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     flex-direction: column;
     gap: 0; padding: 0;
-    border-bottom: 1px solid var(--line);
+    border-bottom: none;
     max-height: 0; overflow: hidden;
     transition: max-height 0.45s var(--ease);
+    z-index: 99;
   }
-  nav ul.active { max-height: 340px; }
-  nav ul li { width: 100%; text-align: center; }
-  nav ul li a { display: block; padding: 1.1rem 0; border-top: 1px solid var(--line); }
+  nav ul.active { max-height: 100vh; overflow-y: auto; }
+  nav ul li { width: 100%; text-align: center; border-top: 1px solid var(--line); }
+  nav ul li:first-child { border-top: none; }
+  nav ul li a { display: block; padding: 1.6rem 0; font-size: 1rem; letter-spacing: 0.1em; }
   .hero-actions .btn { flex: 1; text-align: center; }
 }
 
