@@ -26,9 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close menu when a link is clicked
         const navLinks = document.querySelectorAll('nav ul a');
         navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+            link.addEventListener('click', function(e) {
+                // Use setTimeout to let the smooth scroll happen first
+                setTimeout(function() {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }, 100);
             });
         });
 
