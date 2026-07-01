@@ -204,7 +204,11 @@ select:focus {
 .label-badge span { font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); }
 
 /* ============================ SHOWCASE ============================ */
-.showcase { background: var(--bg-alt); padding: 6.5rem 0; }
+.showcase { 
+  background: var(--bg-alt); 
+  padding: 6.5rem 0;
+  border-top: 0.5px solid var(--line);
+}
 .showcase .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -218,7 +222,11 @@ select:focus {
 .showcase-text p { color: var(--muted); margin-bottom: 2.2rem; max-width: 38ch; }
 
 /* ============================ CONTACT ============================ */
-.contact { padding: 7rem 0; text-align: center; }
+.contact { 
+  padding: 7rem 0; 
+  text-align: center;
+  border-top: 0.5px solid var(--line);
+}
 .contact h2 { font-size: clamp(2rem, 4vw, 3rem); }
 .contact-list { list-style: none; margin-top: 2.5rem; display: inline-flex; flex-direction: column; gap: 1.4rem; }
 .contact-list a {
