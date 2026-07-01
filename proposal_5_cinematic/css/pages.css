@@ -504,6 +504,11 @@
 }
 
 @media (max-width: 640px) {
+  .page-hero {
+    background-attachment: scroll;
+    background-position: center;
+  }
+
   .rooms-grid {
     grid-template-columns: 1fr;
     gap: 1.2rem;
