@@ -67,9 +67,9 @@ nav {
   top: 0;
   z-index: 100;
   background: rgba(250, 248, 244, 0.82);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 nav .container {
   display: flex;
