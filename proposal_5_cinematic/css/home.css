@@ -131,6 +131,20 @@ footer p + p { margin-top: 0.4rem; font-size: 0.68rem; letter-spacing: 0.22em; t
 .reveal.visible { opacity: 1; transform: none; }
 
 /* ============================ RESPONSIVE ============================ */
+body.menu-open {
+  overflow: hidden;
+}
+body.menu-open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 98;
+  pointer-events: auto;
+}
+
 @media (max-width: 900px) {
   .about-block .grid { grid-template-columns: 1fr; gap: 2.4rem; }
   .about-block .side { border-left: 0; padding-left: 0; }

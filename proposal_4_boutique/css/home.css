@@ -171,6 +171,20 @@ footer p + p { margin-top: 0.4rem; font-size: 0.72rem; letter-spacing: 0.12em; t
 .hero-figure .pill { animation: floaty 5s ease-in-out infinite; }
 
 /* ============================ RESPONSIVE ============================ */
+body.menu-open {
+  overflow: hidden;
+}
+body.menu-open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 98;
+  pointer-events: auto;
+}
+
 @media (max-width: 900px) {
   .hero .grid { grid-template-columns: 1fr; gap: 3rem; }
   .hero-figure img { aspect-ratio: 16/12; }

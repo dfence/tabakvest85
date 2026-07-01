@@ -282,6 +282,20 @@ footer p + p { margin-top: 0.4rem; font-size: 0.72rem; letter-spacing: 0.2em; te
 }
 
 /* ============================ ACCESSIBILITY: REDUCED MOTION ============================ */
+body.menu-open {
+  overflow: hidden;
+}
+body.menu-open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 98;
+  pointer-events: auto;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

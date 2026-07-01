@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.addEventListener('click', function() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
         });
 
         // Close menu when a link is clicked
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', function() {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
             });
         });
 
@@ -37,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!event.target.closest('nav')) {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
             }
         });
     }
