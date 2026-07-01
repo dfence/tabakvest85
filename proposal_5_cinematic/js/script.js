@@ -2,6 +2,18 @@
 
 // Add active nav link highlighting
 document.addEventListener('DOMContentLoaded', function() {
+    // Create scroll progress bar
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.appendChild(progressBar);
+
+    // Update scroll progress
+    window.addEventListener('scroll', function() {
+        const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = (window.scrollY / windowHeight) * 100;
+        progressBar.style.width = scrolled + '%';
+    });
+
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('nav a');
     

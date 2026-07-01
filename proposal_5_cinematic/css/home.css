@@ -49,6 +49,18 @@ nav.scrolled { background: rgba(10,10,11,0.82); backdrop-filter: blur(14px); -we
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* ============================ SCROLL PROGRESS ============================ */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--sand);
+  z-index: 101;
+  transition: width 0.15s ease-out;
+}
+
 /* ============================ FULLSCREEN SECTIONS ============================ */
 .scene { position: relative; min-height: 100vh; display: flex; overflow: hidden; }
 .scene .bg { position: absolute; inset: -12% 0; background-size: cover; background-position: center; will-change: transform; z-index: 0; }
